@@ -1,3 +1,10 @@
+---
+layout: note
+title: 基于 OpenClaw 学习 Multi-Agent 框架学习清单
+summary: 一份按阶段拆解的 multi-agent 学习路线图。
+permalink: /study-plan/
+---
+
 # 基于 OpenClaw 学习 Multi-Agent 框架学习清单
 
 ## 1. 学习目标

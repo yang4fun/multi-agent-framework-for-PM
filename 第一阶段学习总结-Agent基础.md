@@ -1,3 +1,10 @@
+---
+layout: note
+title: 第一阶段学习总结：Agent 基础
+summary: 从 PM 视角理解 agent 作为最小运行单元的组成和边界。
+permalink: /agent-basics/
+---
+
 # 第一阶段学习总结：Agent 基础
 
 ## 1. 这一阶段学到了什么

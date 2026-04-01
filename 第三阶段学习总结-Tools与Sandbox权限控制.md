@@ -1,3 +1,10 @@
+---
+layout: note
+title: 第三阶段学习总结：Tools 与 Sandbox 权限控制
+summary: 理解工具即权限，以及 sandbox 如何把边界落到执行层。
+permalink: /tools-and-sandbox/
+---
+
 # 第三阶段学习总结：Tools 与 Sandbox 权限控制
 
 ## 1. 这一阶段学到了什么

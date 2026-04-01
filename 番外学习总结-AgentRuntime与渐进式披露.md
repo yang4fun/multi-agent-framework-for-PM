@@ -1,3 +1,10 @@
+---
+layout: note
+title: 番外学习总结：Agent Runtime 与渐进式披露
+summary: 把 agent runtime、审批门和渐进式披露放到同一条运行链路里看。
+permalink: /runtime-and-progressive-disclosure/
+---
+
 # 番外学习总结：Agent Runtime 与渐进式披露
 
 ## 1. 这两个概念的关系

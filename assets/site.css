@@ -1,0 +1,319 @@
+:root {
+  --bg: #f5efe3;
+  --paper: rgba(255, 252, 247, 0.82);
+  --paper-strong: #fffaf2;
+  --ink: #1f2430;
+  --muted: #5d635f;
+  --line: rgba(31, 36, 48, 0.12);
+  --accent: #0f766e;
+  --accent-2: #c2410c;
+  --shadow: 0 18px 60px rgba(31, 36, 48, 0.12);
+  --radius: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(194, 65, 12, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(15, 118, 110, 0.15), transparent 24%),
+    linear-gradient(180deg, #efe5d2 0%, var(--bg) 100%);
+  font-family: "Avenir Next", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 48px;
+}
+
+.site-header,
+.site-footer,
+.hero,
+.card,
+.note-page {
+  backdrop-filter: blur(16px);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 20px;
+  position: sticky;
+  top: 16px;
+  z-index: 10;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--accent), #164e63);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.brand-copy {
+  display: grid;
+  gap: 2px;
+}
+
+.brand-copy strong {
+  font-size: 0.98rem;
+}
+
+.brand-copy small,
+.site-footer,
+.eyebrow,
+.lede,
+.note-kicker,
+.back-link {
+  color: var(--muted);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.site-nav a,
+.back-link {
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.site-main {
+  display: grid;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.hero {
+  padding: 40px;
+  border-radius: 32px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -80px -80px auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(15, 118, 110, 0.18) 0%, rgba(15, 118, 110, 0) 70%);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+}
+
+.hero h1,
+.note-body h1,
+.note-body h2,
+.note-body h3 {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", serif;
+  line-height: 1.15;
+}
+
+.hero h1 {
+  margin: 10px 0 14px;
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+  max-width: 10ch;
+}
+
+.lede {
+  max-width: 58ch;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.hero-grid,
+.card-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.hero-grid {
+  grid-template-columns: 1.4fr 0.9fr;
+  align-items: end;
+}
+
+.card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  padding: 24px;
+  border-radius: var(--radius);
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(31, 36, 48, 0.1);
+  font-size: 0.92rem;
+}
+
+.path-list,
+.note-list {
+  display: grid;
+  gap: 14px;
+  padding: 0;
+  margin: 18px 0 0;
+  list-style: none;
+}
+
+.path-list li,
+.note-list li {
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(31, 36, 48, 0.08);
+}
+
+.path-list strong,
+.note-list strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.note-list a {
+  text-decoration: none;
+}
+
+.note-meta {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--accent);
+  font-size: 0.92rem;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.note-page {
+  padding: 28px;
+  border-radius: 28px;
+}
+
+.note-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.note-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  margin-bottom: 12px;
+}
+
+.note-body {
+  max-width: 78ch;
+}
+
+.note-body h1 {
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  margin-bottom: 1rem;
+}
+
+.note-body h2 {
+  margin-top: 2.4rem;
+}
+
+.note-body code,
+.site-main code {
+  font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+  background: rgba(31, 36, 48, 0.06);
+  padding: 0.12em 0.38em;
+  border-radius: 6px;
+}
+
+.note-body pre code {
+  display: block;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.site-footer {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  font-size: 0.94rem;
+}
+
+@media (max-width: 860px) {
+  .site-header,
+  .hero-grid,
+  .card-grid,
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header,
+  .note-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero,
+  .card,
+  .note-page {
+    padding: 22px;
+  }
+}
+
