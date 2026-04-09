@@ -16,6 +16,7 @@ summary: PM视角下的 multi-agent 学习路线、阶段总结与设计抽象�
         <span class="pill">Agent 基础</span>
         <span class="pill">Context / Workspace</span>
         <span class="pill">Tools / Sandbox</span>
+        <span class="pill">Routing</span>
         <span class="pill">Runtime</span>
         <span class="pill">Progressive Disclosure</span>
       </div>
@@ -46,6 +47,10 @@ summary: PM视角下的 multi-agent 学习路线、阶段总结与设计抽象�
     <li>
       <strong><a href="{{ '/tools-and-sandbox/' | relative_url }}">第三阶段：Tools 与 Sandbox</a></strong>
       从“知道什么”推进到“能做什么”，建立能力边界视角。
+    </li>
+    <li>
+      <strong><a href="{{ '/multi-agent-routing/' | relative_url }}">第四阶段：Multi-Agent Routing</a></strong>
+      理解任务如何分发、结果如何回收，以及为什么协调层必须保持薄。
     </li>
     <li>
       <strong><a href="{{ '/runtime-and-progressive-disclosure/' | relative_url }}">番外：Runtime 与渐进式披露</a></strong>
@@ -106,6 +111,13 @@ summary: PM视角下的 multi-agent 学习路线、阶段总结与设计抽象�
       </a>
     </li>
     <li>
+      <a href="{{ '/multi-agent-routing/' | relative_url }}">
+        <strong>第四阶段学习总结：Multi-Agent Routing</strong>
+        解释任务分发、结果回收、下一跳判断与薄协调层。
+        <span class="note-meta">Open note</span>
+      </a>
+    </li>
+    <li>
       <a href="{{ '/runtime-and-progressive-disclosure/' | relative_url }}">
         <strong>番外学习总结：Agent Runtime 与渐进式披露</strong>
         解释运行循环、审批门、权限升级节奏与自治层级。
@@ -114,4 +126,3 @@ summary: PM视角下的 multi-agent 学习路线、阶段总结与设计抽象�
     </li>
   </ul>
 </section>
-
