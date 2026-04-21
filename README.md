@@ -27,7 +27,7 @@
 2. [第一阶段学习总结-Agent基础.md](./第一阶段学习总结-Agent基础.md)
 3. [第二阶段学习总结-上下文与工作空间.md](./第二阶段学习总结-上下文与工作空间.md)
 4. [第三阶段学习总结-Tools与Sandbox权限控制.md](./第三阶段学习总结-Tools与Sandbox权限控制.md)
-5. [第四阶段学习总结-Multi-Agent Routing.md](./第四阶段学习总结-Multi-Agent Routing.md)
+5. [第四阶段学习总结-Multi-Agent Routing.md](./第四阶段学习总结-Multi-Agent%20Routing.md)
 6. [番外学习总结-AgentRuntime与渐进式披露.md](./番外学习总结-AgentRuntime与渐进式披露.md)
 
 阅读顺序对应的核心主线是：
@@ -74,7 +74,7 @@
 
 ### 5. 第四阶段：Multi-Agent Routing
 
-[第四阶段学习总结-Multi-Agent Routing.md](./第四阶段学习总结-Multi-Agent Routing.md)
+[第四阶段学习总结-Multi-Agent Routing.md](./第四阶段学习总结-Multi-Agent%20Routing.md)
 
 这一阶段主要回答：
 
