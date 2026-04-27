@@ -17,6 +17,7 @@ summary: PM视角下的 multi-agent 学习路线、阶段总结与设计抽象�
         <span class="pill">Context / Workspace</span>
         <span class="pill">Tools / Sandbox</span>
         <span class="pill">Routing</span>
+        <span class="pill">Delegate</span>
         <span class="pill">Runtime</span>
         <span class="pill">Progressive Disclosure</span>
       </div>
@@ -51,6 +52,10 @@ summary: PM视角下的 multi-agent 学习路线、阶段总结与设计抽象�
     <li>
       <strong><a href="{{ '/multi-agent-routing/' | relative_url }}">第四阶段：Multi-Agent Routing</a></strong>
       理解任务如何分发、结果如何回收，以及为什么协调层必须保持薄。
+    </li>
+    <li>
+      <strong><a href="{{ '/delegate-architecture/' | relative_url }}">第五阶段：Delegate Architecture</a></strong>
+      理解 agent 如何以独立身份代表人或组织行动，以及自治为什么必须逐级开放。
     </li>
     <li>
       <strong><a href="{{ '/runtime-and-progressive-disclosure/' | relative_url }}">番外：Runtime 与渐进式披露</a></strong>
@@ -114,6 +119,13 @@ summary: PM视角下的 multi-agent 学习路线、阶段总结与设计抽象�
       <a href="{{ '/multi-agent-routing/' | relative_url }}">
         <strong>第四阶段学习总结：Multi-Agent Routing</strong>
         解释任务分发、结果回收、下一跳判断与薄协调层。
+        <span class="note-meta">Open note</span>
+      </a>
+    </li>
+    <li>
+      <a href="{{ '/delegate-architecture/' | relative_url }}">
+        <strong>第五阶段学习总结：Delegate Architecture</strong>
+        解释代理身份、on-behalf-of 授权、自治分层与安全硬化。
         <span class="note-meta">Open note</span>
       </a>
     </li>

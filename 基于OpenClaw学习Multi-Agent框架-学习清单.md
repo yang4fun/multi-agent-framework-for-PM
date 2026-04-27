@@ -180,7 +180,7 @@ permalink: /study-plan/
 
 ### 目标
 
-理解 OpenClaw 最值得学的一点：agent 的自治能力应该逐级开放，而不是默认拉满。
+理解 OpenClaw 里的 `Delegate Architecture` 主要不是任务 handoff，而是“一个 agent 如何以独立身份代表某个人或组织行动”，以及它的自治能力为什么要逐级开放。
 
 ### 要看什么
 
@@ -188,14 +188,21 @@ permalink: /study-plan/
 
 ### 要回答的问题
 
+- OpenClaw 里的 `delegate` 为什么不等于普通意义上的 agent-to-agent 委托
+- `delegate` 和 `routing` 的关系是什么
+- 一个 delegate 为什么需要自己的 identity、principal、on-behalf-of 关系和 standing orders
 - 为什么要从最低 tier 开始
 - `Read-Only + Draft`、`Send on Behalf`、`Proactive` 三层分别适合什么场景
 - 哪些动作必须人审
-- 哪些动作可以逐步自动化
+- 为什么 hardening 应该先于真实权限授予
 
 ### 学习产出
 
-写一张能力升级表：
+先写一句你自己的定义：
+
+`Delegate = 一个有自己身份、在明确授权和边界下代表人或组织行动的 agent。`
+
+再写一张能力升级表：
 
 | Tier | 能力 | 适用场景 | 风险 | 是否建议默认开启 |
 |------|------|----------|------|------------------|
@@ -205,7 +212,7 @@ permalink: /study-plan/
 
 ### 检查点
 
-如果你设计系统时第一反应就是“让 agent 自己全自动跑”，说明没有真正吸收渐进式披露。
+如果你还把这一章理解成“多 agent 之间怎么继续传任务”，或者设计系统时第一反应就是“让 agent 自己全自动跑”，说明还没有真正理解 delegate 的身份含义和渐进式披露。
 
 ---
 

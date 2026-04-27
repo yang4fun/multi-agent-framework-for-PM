@@ -28,11 +28,12 @@
 3. [第二阶段学习总结-上下文与工作空间.md](./第二阶段学习总结-上下文与工作空间.md)
 4. [第三阶段学习总结-Tools与Sandbox权限控制.md](./第三阶段学习总结-Tools与Sandbox权限控制.md)
 5. [第四阶段学习总结-Multi-Agent Routing.md](./第四阶段学习总结-Multi-Agent%20Routing.md)
-6. [番外学习总结-AgentRuntime与渐进式披露.md](./番外学习总结-AgentRuntime与渐进式披露.md)
+6. [第五阶段学习总结-Delegate Architecture.md](./第五阶段学习总结-Delegate%20Architecture.md)
+7. [番外学习总结-AgentRuntime与渐进式披露.md](./番外学习总结-AgentRuntime与渐进式披露.md)
 
 阅读顺序对应的核心主线是：
 
-`Agent 基础 -> Context / Workspace -> Tools / Sandbox -> Routing -> Runtime -> Progressive Disclosure`
+`Agent 基础 -> Context / Workspace -> Tools / Sandbox -> Routing -> Delegate -> Runtime -> Progressive Disclosure`
 
 ## 文件说明
 
@@ -83,7 +84,18 @@
 - routing 为什么不能退化成固定流水线
 - 为什么协调层必须保持薄
 
-### 6. 番外：Runtime 与渐进式披露
+### 6. 第五阶段：Delegate Architecture
+
+[第五阶段学习总结-Delegate Architecture.md](./第五阶段学习总结-Delegate%20Architecture.md)
+
+这一阶段主要回答：
+
+- OpenClaw 里的 delegate 为什么不是普通意义上的任务委托
+- delegate 和 routing 的关系是什么
+- 为什么 delegate 需要独立身份、代表关系和 standing orders
+- 为什么自治能力要按 tier 逐级开放
+
+### 7. 番外：Runtime 与渐进式披露
 
 [番外学习总结-AgentRuntime与渐进式披露.md](./番外学习总结-AgentRuntime与渐进式披露.md)
 
@@ -106,7 +118,6 @@
 
 这个仓库后面可以继续补充：
 
-- `Delegate Architecture` 分层总结
 - 一个最小 PM multi-agent 系统设计稿
 - 从抽象到具体框架的映射表
 
